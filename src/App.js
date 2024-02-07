@@ -1,3 +1,5 @@
+import 'bulma/css/bulma.css';
+import '../src/styles.css';
 import { CarForm } from "./Component/CarForm";
 import { CarList } from "./Component/CarList";
 import { CarSearch } from "./Component/CarSearch";
@@ -5,10 +7,10 @@ import { CarValue } from "./Component/CarValue";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container is-fluid">
      <CarForm />
-     <CarList />
      <CarSearch />
+     <CarList />
      <CarValue />
     </div>
   );
